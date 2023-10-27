@@ -1,0 +1,28 @@
+2023-10-26T06:27:35+00:00 CRITICAL Uncaught Error: Class "Requests_Cookie_Jar" not found in C:\xampp\htdocs\print\wp-includes\class-requests.php:591
+Stack trace:
+#0 C:\xampp\htdocs\print\wp-includes\class-requests.php(365): Requests::set_defaults('http://localhos...', Array, NULL, 'POST', Array)
+#1 C:\xampp\htdocs\print\wp-includes\class-wp-http.php(394): Requests::request('http://localhos...', Array, NULL, 'POST', Array)
+#2 C:\xampp\htdocs\print\wp-includes\class-wp-http.php(614): WP_Http->request('http://localhos...', Array)
+#3 C:\xampp\htdocs\print\wp-includes\http.php(179): WP_Http->post('http://localhos...', Array)
+#4 C:\xampp\htdocs\print\wp-content\plugins\mailpoet\lib\WP\Functions.php(598): wp_remote_post('http://localhos...', Array)
+#5 C:\xampp\htdocs\print\wp-content\plugins\mailpoet\lib\Cron\CronHelper.php(175): MailPoet\WP\Functions->wpRemotePost('http://localhos...', Array)
+#6 C:\xampp\htdocs\print\wp-content\plugins\mailpoet\lib\Cron\CronHelper.php(141): MailPoet\Cron\CronHelper->queryCronUrl('http://localhos...')
+#7 C:\xampp\htdocs\print\wp-content\plugins\mailpoet\lib\Cron\DaemonHttpRunner.php(117): MailPoet\Cron\CronHelper->accessDaemon('1ywkn')
+#8 C:\xampp\htdocs\print\wp-content\plugins\mailpoet\lib\Cron\DaemonHttpRunner.php(109): MailPoet\Cron\DaemonHttpRunner->callSelf()
+#9 C:\xampp\htdocs\print\wp-content\plugins\mailpoet\lib\Router\Endpoints\CronDaemon.php(42): MailPoet\Cron\DaemonHttpRunner->run(Array)
+#10 [internal function]: MailPoet\Router\Endpoints\CronDaemon->run(Array)
+#11 C:\xampp\htdocs\print\wp-content\plugins\mailpoet\lib\Router\Router.php(68): call_user_func(Array, Array)
+#12 C:\xampp\htdocs\print\wp-content\plugins\mailpoet\lib\Config\Initializer.php(369): MailPoet\Router\Router->init()
+#13 C:\xampp\htdocs\print\wp-includes\class-wp-hook.php(307): MailPoet\Config\Initializer->postInitialize('')
+#14 C:\xampp\htdocs\print\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#15 C:\xampp\htdocs\print\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#16 C:\xampp\htdocs\print\wp-settings.php(620): do_action('wp_loaded')
+#17 C:\xampp\htdocs\print\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\print\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#19 C:\xampp\htdocs\print\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\print\index.php(17): require('C:\\xampp\\htdocs...')
+#21 {main}
+  thrown in C:\xampp\htdocs\print\wp-includes\class-requests.php on line 591
+
+2023-10-26T07:06:43+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\print\wp-content\plugins\elementor\modules\landing-pages\admin-menu-items\landing-pages-menu-item.php on line 7
+
